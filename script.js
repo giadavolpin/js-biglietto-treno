@@ -13,6 +13,9 @@ Questo richiederà un minimo di ricerca. */
 let kmUtente = prompt ('inserisci km che vuoi fare');
 let etaUtente = prompt('inserisci la tua eta');
 
-console.log ticketCost = prompt ('0.21 * kmUtente');
+let ticketCost = prompt (' ')
+
+console.log  (ticketCost);
+
 
 
