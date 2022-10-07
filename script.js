@@ -23,6 +23,7 @@ Altrimenti se utente età over65 prezzo biglietto prezzoBiglietto
     prezzoBiglietto * scontoOver65
 */
 
+
 const numeroKm = parseInt(prompt ('Quanti chilometri vuoi percorrere?'))
 const etaUtente = parseInt(prompt('Quanti anni hai?'))
 
@@ -38,18 +39,22 @@ const scontoOver65 = 0.40
 let prezzoBiglietto = numeroKm * prezzoKm
 
 let messaggio = `
-<h1> Il costo del tuo biglietto è:${prezzoBiglietto} €</h1> `
+<h1> Il costo del tuo biglietto è: </h1> 
+`;
 /* console.log (prezzoBiglietto) */
 
 
 
 if(etaUtente <= 18){
     prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto * scontoUnder18)
-    messaggio += ${prezzoBiglietto} €  `Hai ricevuto uno sconto del 20%`;
+    messaggio += ` ${prezzoBiglietto}€ Hai ricevuto uno sconto del 20%`;
 
 } else if (etaUtente >= 65){
     prezzoBiglietto = prezzoBiglietto - (prezzoBiglietto + scontoOver65)
-    messaggio += ${prezzoBiglietto} € `Hai ricevuto uno sconto del 40%`;
+    messaggio += ` ${prezzoBiglietto.toFixed(2)} € Hai ricevuto uno sconto del 40%`;
+} else {
+    messaggio += ` ${prezzoBiglietto.toFixed(2) } €` 
 }
 
 
+document.getElementById('biglietto').innerHTML += messaggio;
