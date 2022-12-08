@@ -23,7 +23,8 @@ Altrimenti se utente età over65 prezzo biglietto prezzoBiglietto
     prezzoBiglietto * scontoOver65
 */
 
-
+const nome = prompt('Come ti chiami?')
+const meta = prompt('in quale stazione andrai?')
 const numeroKm = parseInt(prompt ('Quanti chilometri vuoi percorrere?'))
 const etaUtente = parseInt(prompt('Quanti anni hai?'))
 
@@ -37,6 +38,9 @@ const prezzoKm = 0.21
 const scontoUnder18 = 0.20
 const scontoOver65 = 0.40 
 let prezzoBiglietto = numeroKm * prezzoKm
+
+const station = document.getElementById('stazione');
+station.innerHTML += meta;
 
 let messaggio = `
 <h1> Il costo del tuo biglietto è: </h1> 
