@@ -39,6 +39,8 @@ const scontoUnder18 = 0.20
 const scontoOver65 = 0.40 
 let prezzoBiglietto = numeroKm * prezzoKm
 
+const nomecliente = document.getElementById('nome');
+nomecliente.innerHTML += nome;
 const station = document.getElementById('stazione');
 station.innerHTML += meta;
 

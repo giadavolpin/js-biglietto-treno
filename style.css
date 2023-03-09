@@ -1,0 +1,28 @@
+
+*{
+    font-size: 20px;
+    color: rgb(249, 0, 0);
+    
+}
+.rosso{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+}
+.treno{
+    box-shadow: 5px 10px #f07a7a; 
+    border: 1px solid black;
+    padding: 250px;
+    margin-bottom: 30px;
+    margin-left: 143px;
+    margin-right: 159px;
+    background-image: url(viaggiare-treno-nuove-regole-fase-2.webp);
+}
+.ter{
+    margin-left: 165px;
+    margin-right: 400px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 10px #f07a7a; 
+}
